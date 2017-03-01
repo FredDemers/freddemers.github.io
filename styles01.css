@@ -137,6 +137,7 @@ nav{
    padding: 10px;
    border-radius: 20px;
    font-family: 'Roboto', sans-serif;
+   z-index: -1;
 }
 
 #qr{display:none}
@@ -161,7 +162,8 @@ aside{
    left: 0px;
    top: 70px;
    float:left;
-   clear: both;}
+   clear: both;
+   z-index: 10;}
 #page_titre aside{}
 
 footer{
@@ -270,7 +272,8 @@ footer{
   #main{
    margin-left: 100px;
    width: 400px;
-   padding-bottom: 50px;}
+   padding-bottom: 50px;
+ }
 
   nav{width: 512px;}
   .photo{transform: scale(.5);}
