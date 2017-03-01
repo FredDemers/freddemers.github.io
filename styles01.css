@@ -287,18 +287,18 @@ footer{
     left: -200px;}
 
   aside ul{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;}
+   list-style: none;
+   padding: 0px;
+   margin: 0px;}
 
   aside li{
-    list-style: none;
-    padding: 0px;
+   list-style: none;
+   padding: 0px;
    margin: 0px;}
 }
 
 @media handheld{
-  
+
 }
 
 @media only print{
