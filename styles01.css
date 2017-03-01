@@ -73,6 +73,7 @@ body{
   -ms-writing-mode: vertical-lr;
   -ms-text-orientation: upright;
   color: #C3EFFE;
+
   margin-bottom: 20px;
   text-align: left;
   font-size: 90px;
@@ -84,24 +85,26 @@ body{
   border: solid;
   animation-duration: 2.5s;
     animation-name: blink;
-    animation-iteration-count: infinite;}
+    animation-iteration-count: infinite;
+  z-index: 10;}
     @keyframes blink {
       0% {
-        opacity: 0.7;
+        opacity: 0.7;text-shadow: 0 0 0px #fff; box-shadow: 0 0 0px #fff;
       }
 
       49.99% {
-        opacity: 0.7;
+        opacity: 0.7; text-shadow: 0 0 0px #fff;
       }
       50% {
-        opacity: 1;
+        opacity: 1;  text-shadow: 0 0 5px #fff; text-shadow: 0 0 10px #C3EFFE; box-shadow: 0 0 5px #fff; text-shadow: 0 0 10px #C3EFFE;
       }
 
+
       99.99% {
-        opacity: 1;
+        opacity: 1;  text-shadow: 0 0 5px #fff;  text-shadow: 0 0 10px #C3EFFE; box-shadow: 0 0 5px #fff; text-shadow: 0 0 10px #C3EFFE;
       }
       100% {
-        opacity: 0.7;
+        opacity: 0.7;  opacity: 0.7; text-shadow: 0 0 0px #fff;
       }
     }
 
