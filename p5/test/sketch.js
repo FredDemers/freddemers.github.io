@@ -33,7 +33,7 @@ function Ball() {
 
     this.couleur = color(255, 255, 255, 150);
     this.posy = random(windowHeight, windowHeight);
-    var dx= map(mouseX,0,windowWidth,random(windowWidth / 2,windowWidth / 2),random(0,windowWidth));
+    var dx= map(mouseX,0,windowWidth,random(0,0),random(windowWidth,windowWidth));
     this.posx = dx;
     this.taille = random(80, 100);
     this.speed = random(6, 10);
