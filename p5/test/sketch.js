@@ -41,7 +41,7 @@ function Ball() {
     this.life = random(10, 100);
     this.lifeMax = this.life;
     this.rot = random(0,360);
-    this.vy = random(map(mouseY,0,windowHeight,-5,0),-1);
+    this.vy = random(map(mouseY,0,windowHeight,0,-5),-1);
     this.rotv = random(-7,7)
   }
 
