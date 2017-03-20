@@ -22,6 +22,7 @@ function draw() {
   background(0);
   for (var i = 0; i < maxBalls; i++) {
     balls[i].drawBall();
+    ellipse()
   }
 }
 //***************************************************

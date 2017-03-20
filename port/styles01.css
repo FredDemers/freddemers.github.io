@@ -1,6 +1,6 @@
 html {height: 100%;
 width: 100%;}
-
+@import url('https://fonts.googleapis.com/css?family=Diplomata+SC');
 nav #news a{width: 250px; height: 30px; background-color: #fff;display: block; background:}
 nav #news a:link{background: url(images/menu_sprite.png)}
 nav #news a:visited{background: url(images/menu_sprite.png); background-position-x: -256px}
@@ -80,7 +80,7 @@ body{
   text-align: left;
   font-size: 90px;
 
-  font-family:impact;
+  font-family: url('https://fonts.googleapis.com/css?family=Diplomata+SC');
   text-decoration: none;
   position: absolute;
   left: -10px;
