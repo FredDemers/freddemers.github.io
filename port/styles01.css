@@ -95,7 +95,7 @@ body{
         opacity: 0.7;text-shadow: 0 0 0px #fff; box-shadow: 0 0 0px #fff;
       }
 
-      49.99% {
+      49% {
         opacity: 0.7; text-shadow: 0 0 0px #fff;
       }
       50% {
@@ -103,7 +103,7 @@ body{
       }
 
 
-      99.99% {
+      99% {
         opacity: 1;  text-shadow: 0 0 5px #fff;  text-shadow: 0 0 10px #C3EFFE; box-shadow: 0 0 5px #fff; text-shadow: 0 0 10px #C3EFFE;
       }
       100% {
@@ -223,12 +223,7 @@ height: 60px;}
 .photo:hover .coco{display: block;}
 
 .photo{transition: all 1s ease-in-out 0s;}
-.photo1{transition: all 1s ease-in-out 0s;}
-.photo2{transition: all 1s ease-in-out 0s;}
-.photo3{transition: all 1s ease-in-out 0s;}
-.photo4{transition: all 1s ease-in-out 0s;}
-.photo5{transition: all 1s ease-in-out 0s;}
-.photo6{transition: all 1s ease-in-out 0s;}
+
 
 @media screen and (min-width:1600px)
 {
@@ -280,13 +275,11 @@ height: 60px;}
  }
 
   nav{width: 512px;}
-  .photo{transform: scale(.5);}
-  .photo1{transform: scale(.5);}
-  .photo2{transform: scale(.5);}
-  .photo3{transform: scale(.5);}
-  .photo4{transform: scale(.5);}
-  .photo5{transform: scale(.5);}
-  .photo6{transform: scale(.5);}
+  .photo{
+    transform: scale(.2);
+
+  }
+
   .spin2{transition: all 1.5s ease-in-out 0s;}
   .spin2:hover{transform:scale(1.5);}
 
