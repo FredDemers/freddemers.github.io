@@ -18,11 +18,11 @@ function draw() {
 }
 //***************************************************
 function Ball() {
-  var ali = random(200)
+  var ali = random(100)
     this.couleur = color(ali, ali, ali, 150);
   this.vx = 0;
   this.vy = -1;
-this.posy= random(0,windowHeight);
+this.posy= random(0,windowHeight-200);
 
   this.init = function(){
   this.posx = random(0, windowWidth);
@@ -44,7 +44,7 @@ this.posy= random(0,windowHeight);
 
   this.update = function() {
     if(this.posy<0){
-      this.posy=windowHeight;
+      this.posy=windowHeight-200;
       this.init();}
     this.posx += this.vx * this.speed;
     this.posy += this.vy * this.speed;
