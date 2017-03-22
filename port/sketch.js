@@ -11,7 +11,7 @@ function setup() {
 }
 //***************************************************
 function draw() {
-  background(0);
+  clear();
   for(var i=0; i<60; i++){
     balls[i].drawBall();
   }
