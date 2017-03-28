@@ -57,15 +57,17 @@ z-index: -999;}
 
 body{
   height:100%;
+  width: 100%;
   font-family:verdana;
   margin: 0;
-  background-color: #040E21;
-  background-image: url(images/b1.png);
-  background-repeat:repeat-x;
-  background-position: bottom;
-
+  background-color: #191240;
 }
 
+#b{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 
  header{
