@@ -314,6 +314,7 @@ height: 60px;}
   nav{display:none}
   header{display: none;}
   #main{margin-left: 20px;
+  width: 800px;
   font-family: times;}
   footer{display:none;}
   #page_about #main, #page_contact #main{border:none;}
