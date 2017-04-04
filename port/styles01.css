@@ -72,18 +72,21 @@ body{
   animation-timing-function: linear;
 }
 @keyframes background {
-  0%{background-color: #000;}
-  10%{background-color: #191240;}
-  25%{background-color:#FFBF00}
-  30%{background-color:#548EF6}
-  70%{background-color:#548EF6}
-  75%{background-color:#FFBF00}
-  90%{background-color: #191240;}
-  100%{background-color: #191240;}
+  0%{background-color: #021D27;}
+  10%{background-color:#033142}
+  20%{background-color:#09475F}
+  40%{background-color:#0C5875}
+  50%{background-color: #076C93;}
+  60%{background-color: #076C93;}
+  70%{background-color:#0C5875}
+  80%{background-color:#09475F}
+  90%{background-color:#033142}
+  100%{background-color: #021D27;}
+
 }
 #b{
   position: fixed;
-  bottom: 0;
+  bottom: -10px;
   width: 100%;
 }
 
