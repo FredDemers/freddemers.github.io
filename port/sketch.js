@@ -22,7 +22,7 @@ function Ball() {
     this.couleur = color(ali, ali, ali, 150);
   this.vx = 0;
   this.vy = -1;
-this.posy= random(0,windowHeight-200);
+this.posy= random(0,windowHeight);
 
   this.init = function(){
   this.posx = random(0, windowWidth);
@@ -44,7 +44,7 @@ this.posy= random(0,windowHeight-200);
 
   this.update = function() {
     if(this.posy<0){
-      this.posy=windowHeight-200;
+      this.posy=windowHeight;
       this.init();}
     this.posx += this.vx * this.speed;
     this.posy += this.vy * this.speed;
