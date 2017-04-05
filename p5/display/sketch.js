@@ -534,7 +534,7 @@ function updateGame() {
     case 14:
       texte = "Oh well, le voici hehehe";
       opt1 = ["Real funny","Très dole"];
-      opt2 = ["Do you even have a real picture of him?","T'as tu même une vrais photo de lui?]";
+      opt2 = ["Do you even have a real picture of him?","T'as tu même une vrais photo de lui?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       imgg = true;
@@ -544,7 +544,7 @@ function updateGame() {
     case 13:
       texte = "Le voici hehehe";
  opt1 = ["Real funny","Très dole"];
-      opt2 = ["Do you even have a real picture of him?","T'as tu même une vrais photo de lui?]";
+      opt2 = ["Do you even have a real picture of him?","T'as tu même une vrais photo de lui?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       imgg = true;
@@ -563,7 +563,7 @@ function updateGame() {
     case 19:
       texte = "Il avait un fire wall";
       opt1 = ["Nice pun","Beaux jeux de mots"];
-      opt2 = ["Are you a comedian now?""T’es tu un comédien toi?"];
+      opt2 = ["Are you a comedian now?","T’es tu un comédien toi?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fire1 = true;
