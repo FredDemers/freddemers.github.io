@@ -169,7 +169,12 @@ nav{
    padding-bottom: 50px;
 }
 #snapcode #main{
-
+  width: 800px;
+  height:auto;
+  margin-top: 80px;
+  padding: 10px;
+  z-index: -1;
+  padding-bottom: 50px;
 }
 
 #qr{display:none}
