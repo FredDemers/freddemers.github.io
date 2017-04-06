@@ -36,7 +36,7 @@ function preload() {
 }
 
 function setup() {
-  windowW = windowWidth - 10;
+  windowW = windowWidth - 50;
   windowH = windowHeight / 1.5;
   createCanvas(windowW, windowH);
   angleMode(DEGREES)
@@ -583,7 +583,7 @@ function updateGame() {
       textes = ["There was a fire wall.","Il avait un fire wall"];
       texte = textes[lang];
       opt1 = ["Nice pun", "Beaux jeux de mots"];
-      opt2 = ["Are you a comedian now?", "T’es tu un comédien toi?"];
+      opt2 = ["You you a comedian now?", "T’es tu un comédien toi?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fire1 = true;
@@ -592,7 +592,6 @@ function updateGame() {
     case 27:
       textes = ["Pretty funny huh? \n But seriously, im on fire","Pas mal comique non? \n Mais sérieusement, je suis en feu."];
       texte = textes[lang];
-      texte = "Pas mal comique non? \n Mais sérieusement, je suis en feu...";
       opt1 = ["Can you put that thing out?", "Peux tu l'éteindre?"];
       opt2 = ["It's not that big", "Le feu n’est pas si gros"];
       document.getElementById("btn1").innerHTML = opt1[lang];
@@ -617,7 +616,7 @@ function updateGame() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth - 10, windowHeight / 1.5);
+  resizeCanvas(windowWidth - 50, windowHeight / 1.5);
   windowW = windowWidth;
   windowH = windowHeight;
 
