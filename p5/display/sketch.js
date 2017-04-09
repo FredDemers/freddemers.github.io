@@ -334,7 +334,7 @@ function displayTxt() {
 
 function updateGame() {
 
-  switch (stage) {
+ switch (stage) {
     case 0:
       texte = "Hello\n / \nBonjour";
       opt1 = "Hello";
@@ -347,7 +347,7 @@ function updateGame() {
 
     case 1:
       lang = 0;
-      texte = "Welcome to my display";
+      texte = "Welcome to my display.";
       opt1 = ["That's it?"];
       opt2 = ["What are you?"];
       document.getElementById("btn1").innerHTML = opt1;
@@ -357,18 +357,18 @@ function updateGame() {
 
     case 2:
       lang = 1;
-      texte = "Bien venue à mon display";
-      opt1 = ["That's it?", "Ses tout?"];
-      opt2 = ["What are you?", "Que est tu?"];
+      texte = "Bienvenue à mon exposition.";
+      opt1 = ["That's it?", "C’est tout?"];
+      opt2 = ["What are you?", "Qui es-tu?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fetti = true
       break;
 
     case 3:
-      textes = ["Happy now?", "T'es heureux?"];
+      textes = ["Happy now?", "Tu es heureux?"];
       texte = textes[lang];
-      opt1 = ["No, more!", "Non, plus!"];
+      opt1 = ["No, more!", "Pas plus!"];
       opt2 = ["Yeah", "Oui"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
@@ -377,10 +377,10 @@ function updateGame() {
       break;
 
     case 6:
-      textes = ["Is this what you wanted? ", "Ses tu ca ce que tu voulait?!"];
+      textes = ["Is this what you wanted? ", "Est-ce que c’est ce que tu voulais?!"];
       texte = textes[lang];
       opt1 = ["No, even more!", "Non, encore plus!"];
-      opt2 = ["Yes, thankyou", "Oui, merci"];
+      opt2 = ["Yes, thank you", "Oui, merci"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fetti2 = false;
@@ -391,16 +391,16 @@ function updateGame() {
       textes = ["Uh oh", "Uh oh"];
       texte = textes[lang];
       opt1 = ["What?", "Quoi?"];
-      opt2 = ["Are you ok?", "Est tu ok?"];
+      opt2 = ["Are you ok?", "Est-ce que ça va?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fetti3 = false;
       break;
 
     case 15:
-      textes = ["We might have a problem.\n too much confetti", "On à possiblement un problème.\n trop de confetti"];
+      textes = ["We might have a problem.\n Too much confetti.", "On a possiblement un problème.\n Trop de confetti."];
       texte = textes[lang];
-      opt1 = ["Can you put it out?", "Peux tu l'éteindre?"];
+      opt1 = ["Can you put it out?", "Peux-tu l'éteindre?"];
       opt2 = ["It's not THAT bad", "Le feu n’est pas SI gros…"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
@@ -408,10 +408,10 @@ function updateGame() {
       break;
 
     case 20:
-      textes = ["Let me try something.", "Laissent moi asseyez quelque chose"];
+      textes = ["Let me try something.", "Laisse-moi essayer quelque chose"];
       texte = textes[lang];
-      opt1 = ["Did it work?", "C’as tu fonctionner?"];
-      opt2 = ["What did you use?", "Que as tu utiliser?"];
+      opt1 = ["Did it work?", "Est-ce que cela a fonctionné?"];
+      opt2 = ["What did you use?", "Qu’est-ce que tu as utilisé?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       water1 = true;
@@ -419,16 +419,16 @@ function updateGame() {
       break;
 
     case 21:
-      textes = ["You're right, it's actually coasy. \n I've never felt warmth before","T’as raisons, ses actuellement un peux confortable. \n J'ai j'aimais ressenti de la chaleur"];
+      textes = ["You're right, it's actually cosy. \n I've never felt warmth before","Tu as raison, c’est confortable. \n J'ai j'aimais ressenti de la chaleur"];
       texte = textes[lang];
-      opt1 = ["See it's not that bad", "Vois, c’est pas ci male"];
+      opt1 = ["See it's not that bad.", "Tu vois, ce n’est pas si mal."];
       opt2 = ["You should put it out now", "Tu devrais probablement éteindre le feu maintenant"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
     case 24:
-      textes = ["Oh no. \ It was gas!","Oh non.\n C'étais du gaz"];
+      textes = ["Oh no. \ It was gas!","Oh non.\n C'était du gaz!"];
       texte = textes[lang];
       opt1 = ["!#@?&", "!#@?&"];
       opt2 = ["*@($&", "*@($&"];
@@ -439,19 +439,19 @@ function updateGame() {
       break;
 
     case 22:
-      textes = ["Is it just me or is it hot in here?","C’est tu juste moi ou il fait chaud ici?"];
+      textes = ["Is it just me or is it hot in here?","Est-ce que c’est juste moi ou fait-il chaud ici?"];
       texte = textes[lang];
-      opt1 = ["No, it's just you", "Non, ses juste toi?"];
-      opt2 = ["Shouldn't you put it out now?", "Tu veux peut-être éteindre le feu"];
+      opt1 = ["No, it's just you", "Non, c’est juste toi."];
+      opt2 = ["Shouldn't you put it out now?", "Ne veux-tu pas éteindre le feu maintenant?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
     case 25:
-      textes = ["Nope! Alright its not just me! \n I need to reset NOW!","Non! Ok c'est pas juste moi, \n j'ai besoins de faire un reset MAINTENANT!"];
+      textes = ["Nope! Alright it’s not just me! \n I need to reset NOW!","Non! Ce n'est pas juste moi! \n J'ai besoin de réinitialiser MAINTENANT!"];
       texte = textes[lang];
-      opt1 = ["RESET", "RESET"];
-      opt2 = ["RESET", "RESET"];
+      opt1 = ["RESET", "RÉINITIALISATION"];
+      opt2 = ["RESET", "RÉINITIALISATION"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fire1 = false;
@@ -459,10 +459,10 @@ function updateGame() {
       break;
 
     case 26:
-      textes = ["No need to panic! \n I'll just do a reset","Pas besoin de paniquer! \n Je vais faire un reset"];
+      textes = ["No need to panic! \n I'll just do a reset","Pas besoin de paniquer! \n Je vais réinitialiser"];
       texte = textes[lang];
-      opt1 = ["RESET", "RESET"];
-      opt2 = ["RESET", "RESET"];
+      opt1 = ["RESET", "RÉINITIALISATION"];
+      opt2 = ["RESET", "RÉINITIALISATION"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
@@ -470,45 +470,45 @@ function updateGame() {
     case 4:
       textes = ["I am an AI computer","Je suis un ordinateur avec une intelligence artificielle"];
       texte = textes[lang];
-      opt1 = ["What can you do?", "Que peux tu faite?"];
-      opt2 = ["You dont seem so smart", "Tu ne sembles pas trop intelligent"];
+      opt1 = ["What can you do?", "Que peux-tu faire?"];
+      opt2 = ["You don’t seem so smart", "Tu ne me sembles pas tellement intelligent"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fetti = false;
       break;
 
     case 5:
-      textes = ["It's not my fault i was created \n by a first year student.","Ses pas ma faute que j’étais crée par un étudiant \n dans la première année des Communication multimédia"];
+      textes = ["It's not my fault I was created \n by a first year student.","Ce n’est pas de ma faute que j’ai été crée par un étudiant \n en première année des Communications multimédia"];
       texte = textes[lang];
-      opt1 = ["What can you do?", "Que peux tu faite?"];
-      opt2 = ["Who is it?", "Ses qui?"];
+      opt1 = ["What can you do?", "Que peux-tu faire?"];
+      opt2 = ["Who is it?", "Qui est-ce?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
     case 7:
-      textes = ["What do you want me to do?","Que veux tu que je fassent?"];
+      textes = ["What do you want me to do?","Que veux-tu que je fasse?"];
       texte = textes[lang];
-      opt1 = ["Can you make me an omelette", "Peux tu me faire une omelette?"];
-      opt2 = ["Do a calculation for me", "Fait une calculassions pour moi!"];
+      opt1 = ["Can you make me an omelette", "Peux-tu me faire une omelette?"];
+      opt2 = ["Do a calculation for me!", "Fait un calcul pour moi!"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
     case 11:
-      textes = ["I can try. \n Uh oh.","Je peux asseyez. \n Uh oh"];
+      textes = ["I can try. \n Uh oh!.","Je peux essayer. \n Uh oh!"];
       texte = textes[lang];
       opt1 = ["What?", "Quoi?"];
-      opt2 = ["Are you ok?", "Est tu ok?"];
+      opt2 = ["Are you ok?", "Est-ce que ça va?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
 
     case 16:
-      textes = ["I think I burnt the eggs.","Je pense que j'ai bruler les œufs."];
+      textes = ["I think I burnt the eggs.","Je pense que j'ai brûlé les œufs."];
       texte = textes[lang];
-      opt1 = ["Can you put that thing out?", "Peux tu l'éteindre?"];
+      opt1 = ["Can you put that thing out?", "Peux-tu l'éteindre?"];
       opt2 = ["It's not that big", "Le feu n’est pas si gros"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
@@ -517,20 +517,20 @@ function updateGame() {
 
 
     case 12:
-     textes = ["Realy? I'm an AI and you want me to calculate something? \n Oh well your choise \n 1843832x8271763 is... \n Uh oh","Vraiment? Je suis un ordinateur avec de l'intelligence artificielle et tu veux que je fassent une simple calculassions? \n Ok Ses ton choix,\n 1843832x8271763 est... \n Uh oh"];
+     textes = ["Realy? I'm an AI and you want me to calculate something? \n Oh well your choice \n 1843832x8271763 is... \n Uh oh!","Vraiment? Je suis un ordinateur avec de l'intelligence artificielle et tu veux que je fasse un simple calcul? \n Ok Ton choix\n 1843832x8271763 est... \n Uh oh!"];
       texte = textes[lang];
       opt1 = ["What?", "Quoi?"];
-      opt2 = ["Are you ok?", "Est tu ok?"];
+      opt2 = ["Are you ok?", "Est-ce que ça va?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
 
     case 17:
-      textes = ["I knew having a potato as a processor was a bad idea","Je savais qu’un processeur crée dune patate n'étais pas une bonne idée!"];
+      textes = ["I knew having a potato as a processor was a bad idea!","Je savais qu’un processeur créé dune patate n'était pas une bonne idée!"];
       texte = textes[lang];
-      opt1 = ["Can you put that thing out?", "Peux tu l'éteindre?"];
-      opt2 = ["It's not that big", "Le feu n’est pas si gros"];
+      opt1 = ["Can you put that thing out?", "Peux-tu l'éteindre?"];
+      opt2 = ["It's not that big.", "Le feu n’est pas si gros."];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fire1 = true;
@@ -538,20 +538,20 @@ function updateGame() {
 
 
     case 9:
-      textes = ["Frederic Demers. \n you want to see him?","Frédéric Demers. \n Veux tu le voir?"];
+      textes = ["Frederic Demers. \n You want to see him?","Frédéric Demers. \n Veux-tu le voir?"];
       texte = textes[lang];
-      opt1 = ["Yeah, do you have a picture?", "Oui, as tu une photo?"];
-      opt2 = ["No not realy", "Non, pas vraiment?"];
+      opt1 = ["Yeah, do you have a picture?", "Oui, as-tu une photo?"];
+      opt2 = ["No not really.", "Non, pas vraiment."];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
 
     case 14:
-      textes = ["Oh well, here he is","Oh well, le voici hehehe"];
+      textes = ["Oh well, here he is.","Eh bien, le voici hehehe."];
       texte = textes[lang];
-      opt1 = ["Real funny", "Très dole"];
-      opt2 = ["Do you even have a real picture of him?", "T'as tu même une vrais photo de lui?"];
+      opt1 = ["Real funny!", "Très drôle!"];
+      opt2 = ["Do you even have a real picture of him?", "As-tu même une vraie photo de lui?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       imgg = true;
@@ -559,10 +559,10 @@ function updateGame() {
 
 
     case 13:
-      textes = ["Here he is","Le voici hehehe"];
+      textes = ["Here he is.","Le voici hehehe."];
       texte = textes[lang];
-      opt1 = ["Real funny", "Très dole"];
-      opt2 = ["Do you even have a real picture of him?", "T'as tu même une vrais photo de lui?"];
+      opt1 = ["Real funny!", "Très drôle!"];
+      opt2 = ["Do you even have a real picture of him?", "As-tu même une vraie photo de lui?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       imgg = true;
@@ -570,39 +570,39 @@ function updateGame() {
 
 
     case 18:
-      textes = ["Let me see if i can't get onto \n his Facebook  and get a picture of him. \n Uh oh","Laissent moi voir si je peux rentrer \n sur son facebook pour prendre une photo. \n Uh oh..."];
+      textes = ["Let me see if I can't get onto \n his Facebook  and get a picture of him. \n Uh oh!","Laisse-moi voir si je peux aller \n sur son Facebook pour aller chercher une photo. \n Uh oh!"];
       texte = textes[lang];
       opt1 = ["What?", "Quoi?"];
-      opt2 = ["Are you ok?", "Est tu ok?"];
+      opt2 = ["Are you ok?", "Est-ce que ça va?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       imgg = false;
       break;
 
     case 19:
-      textes = ["There was a fire wall.","Il avait un fire wall"];
+      textes = ["There was a firewall.","Il avait un pare-feu."];
       texte = textes[lang];
-      opt1 = ["Nice pun", "Beaux jeux de mots"];
-      opt2 = ["You you a comedian now?", "T’es tu un comédien toi?"];
+      opt1 = ["Nice pun.", "Beau jeu de mots."];
+      opt2 = ["Are you a comedian now?", "Es-tu un comédien maintenant?"];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fire1 = true;
       break;
 
     case 27:
-      textes = ["Pretty funny huh? \n But seriously, im on fire","Pas mal comique non? \n Mais sérieusement, je suis en feu."];
+      textes = ["Pretty funny huh? \n But seriously, I’m on fire.","Pas mal comique non? \n Mais sérieusement, je suis en feu."];
       texte = textes[lang];
-      opt1 = ["Can you put that thing out?", "Peux tu l'éteindre?"];
-      opt2 = ["It's not that big", "Le feu n’est pas si gros"];
+      opt1 = ["Can you put that thing out?", "Peux-tu l'éteindre?"];
+      opt2 = ["It's not that big.", "Le feu n’est pas si gros."];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       break;
 
     case 8:
-      textes = ["Alright, let me present myself. \n I am an AI computer","Bon, laissent moi me présenter. \n Je suis un ordinateur avec une intelligence artificielle."];
+      textes = ["Alright, let me present myself. \n I am an AI computer.","Bon, laisse-moi me présenter. \n Je suis un ordinateur avec une intelligence artificielle."];
       texte = textes[lang];
-      opt1 = ["What can you do?", "Que peux tu faite?"];
-      opt2 = ["You dont seem so smart", "Tu ne sembles pas trop intelligent"];
+      opt1 = ["What can you do?", "Que peux-tu faire?"];
+      opt2 = ["You dont seem so smart.", "Tu ne me sembles pas tellement intelligent."];
       document.getElementById("btn1").innerHTML = opt1[lang];
       document.getElementById("btn2").innerHTML = opt2[lang];
       fetti2 = false;
