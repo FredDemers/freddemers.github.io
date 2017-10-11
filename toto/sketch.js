@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(115);
+  background(255);
 
   for (var i = 0; i < touches.length; i++) {
     ellipse(touches[i].x, touches[i].y, 150, 150);
