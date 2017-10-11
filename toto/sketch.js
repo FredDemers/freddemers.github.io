@@ -11,14 +11,20 @@ function setup() {
 }
 
 function draw() {
-  background(200);
-
-  for (var i = 0; i < touches.length; i++) {
-    ellipse(touches[i].x, touches[i].y, 150, 150);
-  }
+  background(255);
   beginShape();
-  for (var j = 0; j < touches.length; j++) {
+  for (var i = 0; i < touches.length; i++) {
     vertex(touches[i].x, touches[i].y);
   }
-  endShape(CLOSE);
+  endShape();
+  fill(200, 115, 100);
+  for (var j = 0; j < touches.length; j++) {
+    vertex(touches[j].x, touches[j].y, 150, 150);
+
+    for (var i = 0; i < touches.length; i++) {
+      ellipse(touches[i].x, touches[i].y, 150, 150);
+    }
+
+  }
+
 }
