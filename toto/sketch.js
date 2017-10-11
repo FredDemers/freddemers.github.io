@@ -4,7 +4,7 @@ document.ontouchmove = function(event){
 
 function setup() {
  createCanvas(windowWidth,windowHeight);
- rectMode(CENTER);
+ //rectMode(CENTER);
  stroke(0);
  noFill();
  strokeWeight(5);
