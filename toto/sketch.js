@@ -4,7 +4,7 @@ document.ontouchmove = function(event){
 
 function setup() {
  createCanvas(windowWidth,windowHeight);
- rectMode(CENTER);
+ ellipseMode(CENTER);
  stroke(0);
  noFill();
  strokeWeight(5);
@@ -14,6 +14,6 @@ function draw(){
  background(255);
  
  for(var i=0;i<touches.length;i++){
-  rect(touches[i].x,touches[i].y,150,150);
+  ellipse(touches[i].x,touches[i].y,150,150);
   }
 }
