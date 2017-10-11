@@ -33,7 +33,7 @@ function draw() {
     var posx = floor(touches[i].x);
     var posy = floor(touches[i].y);
     textSize(70);
-    text(posx, touches[i].x + 75, touches[i].y - 25);
-    text(posy, touches[i].x + 75, touches[i].y + 50);
+    text("posX:"+posx, touches[i].x + 75, touches[i].y - 25);
+    text("posY:"+posy, touches[i].x + 75, touches[i].y + 50);
   }
 }
