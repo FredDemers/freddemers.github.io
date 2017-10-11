@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(155);
   beginShape();
   for (var i = 0; i < touches.length; i++) {
     vertex(touches[i].x, touches[i].y);
@@ -22,8 +22,9 @@ function draw() {
 
   for (var i = 0; i < touches.length; i++) {
     ellipse(touches[i].x, touches[i].y, 150, 150);
+    var posx = floor(map(touches[i].x));
+    var posy = floor(map(touches[i].y));
+    text(posx, touches[i].x+10, touches[i].y-10);
+    text(posy, touches[i].x+10, touches[i].y+10);
   }
-/*var posx =map(touches[i].x);
-var posy =map(touches[i].y);
-text(posx,touches[i].x+10);*/
 }
