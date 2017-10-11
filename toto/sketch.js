@@ -20,6 +20,6 @@ function draw() {
   vertex(touches[2], touches[3]);
   vertex(touches[3], touches[4]);
   vertex(touches[4], touches[5]);
-  endShape();}
+  endShape(CLOSE);}
   
 }
