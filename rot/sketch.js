@@ -4,10 +4,11 @@ var vx = 0;
 var vy = 0;
 var ax = 0;
 var ay = 0;
-var devrotx, devroty, vmulti;
+var devrotx, devroty, vmulti, rando;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  rando = random(0,255);
   x = windowWidth / 2;
   y = windowHeight / 2;
   vmulti = 0.01;
@@ -17,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(55);
   rot();
   move();
   info();
@@ -55,18 +56,22 @@ function move() {
   if (x - 75 < 0) {
     vx = -vx * bmulti;
     x = 0 + 75;
+    background(rando,rando,rando)
   }
   if (x + 75 > windowWidth) {
     vx = -vx * bmulti;
     x = windowWidth - 75;
+     background(rando,rando,rando)
   }
 
   if (y - 75 < 0) {
     vy = -vy * bmulti;
     y = 0 + 75;
+     background(rando,rando,rando)
   }
   if (y + 75 > windowHeight) {
     vy = -vy * bmulti;
     y = windowHeight - 75;
+     background(rando,rando,rando)
   }
 }
