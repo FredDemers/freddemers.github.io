@@ -55,7 +55,7 @@ function move() {
   y += vy;
   
   if(x<0 || x>windowWidth){
-    vx=-vx*bmulti;
+    vx=-vx*bmulti;}
  if(y<0 || y>windowWidth){
     vy=-vy*bmulti;
   }
