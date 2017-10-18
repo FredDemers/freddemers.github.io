@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
 
- background(255);
+ background(155);
  textSize(40);
  fill(133,236,112);
  noStroke();
