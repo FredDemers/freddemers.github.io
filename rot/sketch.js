@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(55);
+  background(155);
   textSize(40);
   rot();
   move();
@@ -56,7 +56,7 @@ function move() {
   
   if(x<0 || x>windowWidth){
     vx=-vx*bmulti;}
- if(y<0 || y>windowWidth){
+ if(y<0 || y>windowHeight){
     vy=-vy*bmulti;
   }
 }
