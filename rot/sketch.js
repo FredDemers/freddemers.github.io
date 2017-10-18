@@ -18,6 +18,7 @@ function setup() {
 }
 
 function draw() {
+  clear;
   rot();
   move();
   info();
@@ -39,7 +40,7 @@ function info() {
   textSize(40);
   fill(0);
   text("X Rotation: " + rotationX +"°", x + 80, y - 20);
-  text("Y Rotation: " + rotationY +"°", x + 80, y + 20);
+  text("Y Rotation: " + rotationY +"°", x + 80, y + 30);
 }
 
 function move() {
