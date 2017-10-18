@@ -35,11 +35,10 @@ function rot() {
 }
 
 function info() {
-  textMode
   textSize(40);
   fill(0);
-  text("Rx: " + rotationX, x+80, y-20);
-  text("Ry: " + rotationY, x+80, y+20);
+  text("Rx: " + rotationX, x + 80, y - 20);
+  text("Ry: " + rotationY, x + 80, y + 20);
 }
 
 function move() {
@@ -51,10 +50,22 @@ function move() {
 
   x += vx;
   y += vy;
-  
-  if(x-75<0 || x+75>windowWidth){
-    vx=-vx*bmulti;}
- if(y-75<0 || y+75>windowHeight){
-    vy=-vy*bmulti;
+
+  if (x - 75 < 0) {
+    vx = -vx * bmulti;
+    x=0+75;
+  }
+   if(x + 75 > windowWidth) {
+    vx = -vx * bmulti;
+     x=windowWidth-75;
+  }
+
+  if (y - 75 < 0) {
+    vy = -vy * bmulti;
+     y=0+75;
+  }
+   if(y + 75 > windowHeight) {
+    vx = -vx * bmulti;
+    y=windowHeight-75;
   }
 }
