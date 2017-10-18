@@ -39,9 +39,9 @@ function rot() {
 function info() {
   textSize(40);
   fill(0);
-  text("Rx: " + rotationX, 100, 100);
-  text("Ry: " + rotationY, 100, 150);
-  text("Rz: " + rotationZ, 100, 200);
+  text("Rx: " + rotationX, x+80, y-45);
+  text("Ry: " + rotationY, x+80, y+10);
+  text("Rz: " + rotationZ, x+80, y+65);
 }
 
 function move() {
