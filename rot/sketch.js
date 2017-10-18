@@ -17,8 +17,6 @@ function setup() {
 }
 
 function draw() {
-  background(255);
-  textSize(40);
   rot();
   move();
   info();
@@ -37,6 +35,7 @@ function rot() {
 }
 
 function info() {
+  textMode
   textSize(40);
   fill(0);
   text("Rx: " + rotationX, x+80, y-20);
