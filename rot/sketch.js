@@ -54,19 +54,19 @@ function move() {
 
   if (x - 75 < 0) {
     vx = -vx * bmulti;
-    x=0+75;
+    x = 0 + 75;
   }
-   if(x + 75 > windowWidth) {
+  if (x + 75 > windowWidth) {
     vx = -vx * bmulti;
-     x=windowWidth-75;
+    x = windowWidth - 75;
   }
 
   if (y - 75 < 0) {
     vy = -vy * bmulti;
-     y=0+75;
+    y = 0 + 75;
   }
-   if(y + 75 > windowHeight) {
-    vx = -vx * bmulti;
-    y=windowHeight-75;
+  if (y + 75 > windowHeight) {
+    vy = -vy * bmulti;
+    y = windowHeight - 75;
   }
 }
