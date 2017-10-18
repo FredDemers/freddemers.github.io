@@ -12,12 +12,12 @@ function setup() {
   y = windowHeight / 2;
   vmulti = 0.01;
   bmulti = 0.6;
- 
+ changeclr();
 
 }
 
 function draw() {
-  background(rando,rando,rando);
+  background(rando);
   rot();
   move();
   info();
@@ -43,7 +43,7 @@ function info() {
   text("Y Rotation: " + rotationY +"°", x + 80, y + 30);
 }
 function changeclr(){
-  rando=color(random(0,255));
+  rando=color(random(0,255),random(0,255),random(0,255));
 }
 
 function move() {
