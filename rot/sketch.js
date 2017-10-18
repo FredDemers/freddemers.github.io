@@ -38,8 +38,8 @@ function rot() {
 function info() {
   textSize(40);
   fill(0);
-  text("Rx: " + rotationX, x + 80, y - 20);
-  text("Ry: " + rotationY, x + 80, y + 20);
+  text("X Rotation: " + rotationX +"°", x + 80, y - 20);
+  text("Y Rotation: " + rotationY +"°", x + 80, y + 20);
 }
 
 function move() {
