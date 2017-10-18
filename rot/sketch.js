@@ -13,12 +13,11 @@ function setup() {
   y = windowHeight / 2;
   vmulti = 0.01;
   bmulti = 0.6;
-
+ background(255);
 
 }
 
 function draw() {
-  background(55);
   rot();
   move();
   info();
