@@ -17,6 +17,7 @@ function setup() {
 }
 
 function draw() {
+  background(155);
   rot();
   move();
   info();
