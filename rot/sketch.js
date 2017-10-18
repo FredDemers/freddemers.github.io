@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  background(155);
+  background(55);
   textSize(40);
   rot();
   move();
